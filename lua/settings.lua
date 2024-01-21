@@ -17,7 +17,8 @@ vim.cmd([[ set expandtab ]])
 vim.cmd([[ set guicursor= ]])
 vim.cmd([[ syntax on ]])
 vim.cmd([[ set signcolumn=yes]])
-vim.cmd([[ colorscheme catppuccin ]])
+vim.cmd([[ colorscheme dracula ]])
+vim.cmd([[ set termguicolors]])
 vim.cmd([[
   augroup packer_user_config
     autocmd!

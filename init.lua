@@ -1,3 +1,3 @@
-require("configs.settings")
-require("configs.mappings")
-require("plugins.setup")
+require("settings")
+require("mappings")
+require("plugins")
