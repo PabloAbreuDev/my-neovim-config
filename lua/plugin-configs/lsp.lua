@@ -14,3 +14,8 @@ vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, {})
 vim.keymap.set({ 'n', 'v' }, '<leader>ca', vim.lsp.buf.code_action, {})
 vim.keymap.set('n', 'gr', vim.lsp.buf.references, {})
 
+  local capabilities = require('cmp_nvim_lsp').default_capabilities()
+  require('lspconfig')['tsserver'].setup {
+    capabilities = capabilities
+  }
+

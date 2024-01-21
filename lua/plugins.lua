@@ -9,6 +9,7 @@ require('plugin-configs/autopairs')
 require('plugin-configs/prettier')
 require('plugin-configs/lightline')
 require('plugin-configs/tree-sitter')
+require('plugin-configs/completions')
 
 return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
@@ -27,5 +28,10 @@ return require('packer').startup(function()
   use 'nvim-telescope/telescope-ui-select.nvim'
   use 'itchyny/lightline.vim'
   use 'nvim-treesitter/nvim-treesitter'
+  use 'hrsh7th/nvim-cmp'
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'L3MON4D3/LuaSnip'
+  use 'saadparwaiz1/cmp_luasnip'
+  use 'rafamadriz/friendly-snippets'
 end)
 
